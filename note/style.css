@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222;
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+/**
+* * GLOBAL STYLES
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+/**
+* * HEADER
+*/
+
+.header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/**
+* * MAIN SECTION
+*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #000;
+}
+
+.note-container {
+  background: #fff;
+  border-radius: 10px;
+  width: 75%;
+  min-height: 25%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  padding-bottom: 1rem;
+}
+
+.note-head {
+  background: rgb(235, 234, 234);
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.items {
+  border-bottom: 1px solid rgb(207, 206, 206);
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.note-input-wrapper {
+  margin: 2rem;
+  text-align: center;
+}
+#note-input {
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 1rem;
+}
+
+#note-add-btn {
+  padding: 0.5rem 2rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}

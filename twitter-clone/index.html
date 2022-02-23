@@ -8,12 +8,17 @@
 
     <!-- TAILWIND GENERATED STYLESHEET -->
     <link rel="stylesheet" href="./output/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
   </head>
-  <body>
-    <main class="py-2">
-      <!-- HEADER -->
-      <header
-        class="flex justify-between px-4 pt-2 pb-1 fixed top-0 w-full bg-white"
+  <body class="max-w-screen-xl flex justify-center">
+    <!-- <main class="relative"> -->
+    <!-- HEADER -->
+    <!-- <header
+        class="flex justify-between px-4 pt-2 pb-1 sticky top-0 w-full bg-white"
       >
         <div class="links flex items-center">
           <a href=""
@@ -48,8 +53,8 @@
             </svg>
           </button>
         </div>
-      </header>
-      <section class="tweets mt-12 pb-12">
+      </header> -->
+    <!-- <section class="tweets">
         <div class="tweet-wrapper flex py-2 px-4 border-y-[1px]">
           <div class="tweet-img mr-2 w-1/5">
             <img
@@ -699,8 +704,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <nav class="fixed bottom-0 left-0 w-full py-3 px-2 bg-white">
+      </section> -->
+    <!-- <nav class="sticky bottom-0 left-0 w-full py-3 px-2 bg-white">
         <ul class="flex justify-around w-full p-0">
           <li>
             <a href=""
@@ -785,7 +790,130 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
+    <!-- </main> -->
+
+    <aside class="w-64 h-screen" aria-label="Sidebar">
+      <div class="h-full px-3 py-4 overflow-y-auto rounded dark:bg-gray-800">
+        <ul class="space-y-4 h-[90%]">
+          <li>
+            <a href="#" class="w-fit flex p-2 hover:bg-gray-200 rounded-full">
+              <img class="h-8" src="./assets/images/twitter.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-home"></i>
+              <span class="ml-3">Home</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-bell"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Notification</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-envelope"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Message</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-bookmark"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Bookmark</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-list-check"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Lists</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-user"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex items-center p-2 text-xl font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+            >
+              <i class="fi fi-rr-apps"></i>
+              <span class="flex-1 ml-3 whitespace-nowrap">More</span>
+            </a>
+          </li>
+          <li class="w-full bg-sky-400 text-center p-2 rounded-lg">
+            <a
+              href="#"
+              class="text-center w-full text-base font-bold text-white"
+            >
+              Tweet
+            </a>
+          </li>
+        </ul>
+        <div class="w-full bg-sky-400 h-[10%]">
+          <a
+            href="#"
+            class="mt-auto text-center text-base font-bold text-white"
+          >
+            Tweet
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="max-w-2xl w-full border-2 border-red-700 p-3">
+      <header class="flex justify-between bg-white sticky top-0">
+        <a class="text-xl font-bold" href="#">Home</a>
+
+        <button class="hover:bg-gray-200 py-2 px-3 rounded-full">
+          <i class="fi fi-rr-sparkles text-xl"></i>
+        </button>
+      </header>
+      <section>
+        <div class="create-a-tweet flex">
+          <div class="profile-img w-16">
+            <img
+              class="h-12 rounded-full"
+              src="./assets/images/person-1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="create-tweet w-full">
+            <textarea
+              class="border-0 focus:outline-none focus:ring-0 mt-2 text-xl w-full h-fit break-all"
+              id=""
+              placeholder="whats on your mind..."
+            ></textarea>
+          </div>
+        </div>
+      </section>
+      <nav></nav>
     </main>
+    <aside></aside>
+
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
   </body>
 </html>

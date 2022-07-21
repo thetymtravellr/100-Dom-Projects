@@ -1,0 +1,51 @@
+@use "../variables/variables";
+@use "../components/components";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: variables.$bg-color;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  height: 20rem;
+  width: 35rem;
+  background-color: #000;
+  border: 1rem solid variables.$primary-color;
+  border-radius: 4rem;
+
+  .radio-body {
+    height: 100%;
+    width: 100%;
+    border: 1rem solid variables.$secondary-color;
+    border-radius: 3rem;
+    overflow: hidden;
+
+    .radio-items {
+      height: 100%;
+
+      .radio-speaker {
+        height: 70%;
+        background-color: variables.$strips-color;
+        @include components.borderRadius(2rem, 2rem);
+
+        .stripes {
+          .stripe {
+            .speaker {
+              height: 8rem;
+              width: 8rem;
+              background-color: variables.$circle-color;
+              @include components.borderFull;
+            }
+          }
+        }
+      }
+    }
+  }
+}

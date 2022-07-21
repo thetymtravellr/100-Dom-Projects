@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a5c9ca;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  height: 20rem;
+  width: 35rem;
+  background-color: #000;
+  border: 1rem solid #763d22;
+  border-radius: 4rem;
+}
+.container .radio-body {
+  height: 100%;
+  width: 100%;
+  border: 1rem solid #2d2d2b;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.container .radio-body .radio-items {
+  height: 100%;
+}
+.container .radio-body .radio-items .radio-speaker {
+  height: 70%;
+  background-color: #ebe0c0;
+  border-radius: 2rem 2rem 0 0;
+}
+.container .radio-body .radio-items .radio-speaker .stripes .stripe .speaker {
+  height: 8rem;
+  width: 8rem;
+  background-color: #090000;
+  border-radius: 50%;
+}

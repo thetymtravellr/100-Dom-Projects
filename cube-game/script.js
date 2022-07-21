@@ -1,6 +1,6 @@
 'use strict';
 
-/* // Selecting Element
+// Selecting Element
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.getElementById('score--0');
@@ -90,9 +90,9 @@ btnHold.addEventListener('click',() => {
     }
 })
 
-btnNew.addEventListener('click',init); */
+btnNew.addEventListener('click',init);
 
-
+/* 
 const rollDice = document.querySelector('.btn--roll');
 const hold = document.querySelector('.btn--hold');
 const newGame = document.querySelector('.btn--new');
@@ -212,4 +212,4 @@ newGame.addEventListener('click',() => {
     player1.classList.remove('player--winner');
     player2Name.classList.remove('player--winner');
     player2.classList.remove('player--winner');
-})
+}) */
